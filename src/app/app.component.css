@@ -1,0 +1,28 @@
+input {
+    border: 5px solid black;
+    background-color: white;
+}
+
+.scrollbar {
+    border: 2px solid black;
+    float: left;
+    height: 100px;
+    width: 100%;
+    background: #fff;
+    overflow-y: auto;
+    margin-bottom: 25px;
+}
+
+.scrollbar-primary::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+.scrollbar-primary::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #070b11;
+}
+
+.scrollbar-primary {
+    scrollbar-color: #151618 #F5F5F5;
+}

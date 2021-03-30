@@ -1,0 +1,16 @@
+<div class="col-lg-3 mt-1" class="chat-background">
+    <h4 style="text-align: center; ">General Chat Application</h4>
+    <div class="scrollbar-primary scrollbar" style="overflow-y: auto; height: 75vh; ">
+        <div style="padding-left: 10px;padding-top: 10px;" *ngFor="let chat of chats ">
+            <h6>{{chat}}</h6>
+        </div>
+    </div>
+    <div class="row " style="position: absolute; bottom: 20px;margin-left: 20px; ">
+        <div class="col-md-8 ">
+            <input type="text " class="form-control border-dark " id="chatMessage " placeholder="Chat " #chatMessage required (keydown.enter)="sendChatMessage(chatMessage.value);chatMessage.value='' " />
+        </div>
+        <div class="col-md-4 pl-0 ">
+            <button type="submit " class="btn btn-light " (click)="sendChatMessage(chatMessage.value);chatMessage.value='' ">Send</button>
+        </div>
+    </div>
+</div>
